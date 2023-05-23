@@ -13,13 +13,13 @@
 
 /* Navbar styling */
 .navbar{
-    position: fixed;
+    position:absolute;
     width: 100%;
     z-index: 999;
     padding: 30px 0;
     font-family: sans-serif;
     transition: all 0.3s ease;
-    background: #fff;
+    /* background: #fff; */
 }
 .navbar .max-width{
     display: flex;
@@ -27,7 +27,7 @@
     justify-content: space-between;
 }
 .navbar .logo a{
-    color: #5c5b5b;
+    color: #ebebeb;
     font-size: 35px;
     font-weight: 600;
 }
@@ -41,7 +41,7 @@
 }
 .navbar .menu li a{
     display: block;
-    color: #5c5b5b;
+    color: #d4d4d4;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
