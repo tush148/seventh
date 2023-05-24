@@ -6,12 +6,12 @@ import { StoreComponent } from './store/store.component';
 
 const routes: Routes = [
   {
-    component:FeaturedComponent,
-    path:'featured'
+    component:HomeComponent,
+    path:'home'
   },
   {
-    component:HomeComponent,
-    path:''
+    component:FeaturedComponent,
+    path:'featured'
   },
   {
     component:StoreComponent,
