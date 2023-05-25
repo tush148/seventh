@@ -7,7 +7,7 @@ import { StoreComponent } from './store/store.component';
 const routes: Routes = [
   {
     component:HomeComponent,
-    path:'home'
+    path:''
   },
   {
     component:FeaturedComponent,
