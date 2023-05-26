@@ -29,7 +29,7 @@
   margin-right: 0;
 }
 .home .home-content .text-1{
-    font-size: 27px;
+    font-size: 47px;
     color: #6579A5;
 }
 .home .home-content .text-2{
@@ -60,4 +60,21 @@
 .home .home-content a:hover{
     color: crimson;
     background: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    .home .home-content .text-1{
+        font-size: 25px;
+        line-height: 50px;
+    }
+    .home .home-content .text-2{
+        font-size: 55px;
+        color: #546a9b;
+        font-weight: 500;
+    }
+    .home .home-content a{
+        margin: 15px 0;
+        font-size: 20px;
+    }
 }
