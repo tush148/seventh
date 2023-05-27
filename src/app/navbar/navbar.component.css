@@ -52,17 +52,28 @@
 }.navbar.sticky .menu li a:hover{
     color: #fff;
 }
+.menu-btn{
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
 
-
+/* Dropdown menu */
+.dropdown_menu{
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+}
 /* resposive media  */
 @media (max-width: 947px){
     .menu-btn{
         display: block;
         z-index: 999;
     }
-    .menu-btn i.active:before{
+    /* .menu-btn i.active:before{
         content: "\f00d";
-    }
+    } */
     .navbar .menu{
         position: fixed;
         height: 100vh;
