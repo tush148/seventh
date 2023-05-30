@@ -227,7 +227,12 @@
     transform: scaleX(0.5);
 }
 
-
+.row-1{
+    justify-content: space-around;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+}
 .row{
     justify-content: space-around;
     display: flex;
@@ -287,4 +292,19 @@
     text-align: justify;
     margin: auto;
     width: auto;
+}
+
+
+@media screen and (max-width: 600px){
+    .col-4{
+        background-image: url(src/assets/image-12.jpg);
+        min-height: 150px;
+        float: left;
+        min-width: 50vh;
+        background-size: cover;
+        justify-content: space-around;
+        margin: auto;
+        margin-top: 75px;
+        color: #fff;
+    }
 }
