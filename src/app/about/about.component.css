@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    justify-content:  space-around;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+}
+.card{
+    transition: all .2s ease-in-out 0s;
+    height: 450px;
+    width: 275px;
+    margin: 25px;
+    text-align: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    border: 1px solid rgb(194, 194, 194);
+}
+.card a{
+    font-size: 16px;
+    color: #555;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: all .3s;
+    text-decoration: none;
+}
+.card a:hover {
+    color: #fa0;
+    text-decoration: none;
+}
+.image{
+    background: bisque;
+    height: 300px;
+    margin-bottom: 40px;
+}
+.image:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.image-1{
+    background: url(src/assets/image-15.png);
+    background-size: cover;
+}
+.rating  {
+    color: #fa0;
+    line-height: 22px;
+    margin: 0 2px;
+    font-size: 12px;
+}
+.money {
+    font-size: 20px;
+    color: rgb(100, 104, 98);
+    font-weight: 700;
+    font-style: italic;
+    margin-right: 6px;
+}
+
+.price-old {
+    line-height: 18px;
+    display: inline-block;
+    text-decoration: line-through;
+    color: #888;
+    font-style: italic;
+    font-weight: 400;
+}
+.card:hover{
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
