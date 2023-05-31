@@ -10,5 +10,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-
+  display=true
+  toggle()
+  {
+this.display=!this.display;
+  }
   }

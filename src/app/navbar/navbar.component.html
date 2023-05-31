@@ -3,29 +3,33 @@
     <div class="max-width">
         <div class="logo"><a routerLink="home">Say<span>yad.</span></a></div>
 
-        <ul class="menu">
+        <ul class="menu" *ngIf="display">
             <li><a routerLink="">Home</a></li>
             <li><a routerLink="featured">Featured</a></li>
             <li><a routerLink="store">Store</a></li>
             <li><a routerLink="about">About Us</a></li>
         </ul>
         <div class="menu-btn">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars" (click)="toggle()"></i>
         </div>
     </div>
 </nav>
+<!-- <script>
+    const toggleBtn=document.querySelector('.menu-btn')
+    const toggleBtnIcon=document.querySelector('.menu-btn i')
+    const dropDownMenu=document.querySelector('.menu')
 
-<!-- <nav class="navbar">
-    <div class="max-width">
+    toggleBtn.onclick=function(){
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
 
-        <ul class="dropdown_menu open">
-            <li><a routerLink="">Home</a></li>
-            <li><a routerLink="featured">Featured</a></li>
-            <li><a routerLink="store">Store</a></li>
-            <li><a href="">About Us</a></li>
-        </ul>
-    </div>
-</nav> -->
+        toggleBtnIcon.classList=isOpen
+        ? 'fas fa-xmark'
+        : 'fas fa-bars'
+    }
+</script> -->
+
+
 <router-outlet></router-outlet>
 
 
